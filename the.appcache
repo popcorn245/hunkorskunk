@@ -2,10 +2,6 @@ CACHE MANIFEST
 # Hunk-or-Skunk - Copyrights of Robert Johnson 2013
 # Cache Version 0.1
 
-# HTML
-home/
-html/home.html
-
 # CSS
 css/master.css
 

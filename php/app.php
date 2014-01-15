@@ -11,8 +11,8 @@ class App{
 
 		//PDO Vars
 		$pdo_host = "localhost",
-		$pdo_usr  = "root",
-		$pdo_pwd  = "",
+		$pdo_usr = "popcorn_shunks",
+		$pdo_pwd = "E@syStr337",
 		$pdo_db   = "popcorn_hunkorskunk",
 		$pdo_insert,
 		$PDO;
@@ -21,9 +21,9 @@ class App{
 		$detagged = strip_tags($string, $this->wysiwyg_accept);
 		if(get_magic_quotes_gpc()) {
 			$stripped = stripslashes($detagged);
-			$escaped = mysql_real_escape_string($stripped);
+			$escaped = $stripped;
 		} else {
-			$escaped = mysql_real_escape_string($detagged);
+			$escaped = $detagged;
 		}
 		return $escaped;
 	}
