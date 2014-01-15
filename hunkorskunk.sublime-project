@@ -1,0 +1,24 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:/xampp/htdocs/app/hunkorskunk"
+		}
+	],
+	"settings":
+    {
+        "less2css":
+        {
+			"main_file":"C:/xampp/htdocs/app/hunkorskunk/css/less/master.less",
+    		"outputDir": "C:/xampp/htdocs/app/hunkorskunk/css"
+        }
+    },
+	"build_systems":
+    [
+        {
+            "name": "Grunt",
+            "shell_cmd": "grunt"
+        }
+    ]
+}

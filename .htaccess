@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# _IGNORE
+
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|gif|bmp|ttf|wob|eof|ico|txt)$
+RewriteCond %{HTTP_HOST} !^www\.
+
+## GLOBALS
+RewriteRule ^(home.*)/$ index.php [L]
+RewriteRule ^(api.*)/$ php/app.php [L]

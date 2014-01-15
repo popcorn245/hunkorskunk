@@ -1,0 +1,7 @@
+[
+	"js/src/lib/jquery.js",
+	"js/src/lib/angular.js",
+	"js/src/lib/angular-route.js",
+	"js/src/lib/bootstrap.js",
+	"js/src/app.js"
+]

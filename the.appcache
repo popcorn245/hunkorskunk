@@ -1,0 +1,27 @@
+CACHE MANIFEST
+# Hunk-or-Skunk - Copyrights of Robert Johnson 2013
+# Cache Version 0.1
+
+# HTML
+home/
+html/home.html
+
+# CSS
+css/master.css
+
+# FONT
+fonts/fontawesome-webfont.ttf
+fonts/glyphicons-halflings-regular.ttf
+
+# JS
+js/hunkorskunk.js
+
+# IMG
+img/batman.jpg
+img/christopher_walken.jpg
+img/jason_statham.jpg
+img/robert_pattinson.jpg
+img/ryan_reynolds.jpg
+
+NETWORK:
+*

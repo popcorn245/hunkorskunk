@@ -1,0 +1,41 @@
+<div class="alert alert-warning alert-dismissable" ng-show="hideRate">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="closeIt()">&times;</button>
+  <strong>LIMIT REACHED:</strong> Please return tomorrow to see more. 
+</div>
+<div class="home row">
+    <div class="col-sm-6">
+    	<h2>{{guy_name}}</h2>
+        <img src="{{guy_picture}}" class="img-thumbnail" />
+        <rating value="guy_stars" max="10" readonly="true" class="rating-bar"></rating>
+    </div>
+    <div class="col-sm-6">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <span class="badge pull-right">{{rating_count}}</span>
+            Ratings
+        </div>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="rating in ratings" ng-show="ratings">
+            <span class="badge fa fa-star"> {{rating.stars}}</span>
+            {{rating.comment}}
+        </li>
+        <li class="list-group-item" ng-show="!ratings">Be the First to Rate this Guy!</li>
+    </ul>
+</div>
+        
+  	</div>
+</div>
+<div class="navbar navbar-default footer" ng-show="!hideRate">
+    <div class="rater">
+        <rating value="rate" max="10" on-hover="rateHover(value)" ng-click="rateIt()" on-leave="overStar = null" class="rating-bar"></rating>
+        <p class="navbar-right">{{overStar || rate}}</p>
+    </div>
+    <div class="comment row">
+        <div class="col-xs-8">
+            <input type="text" required name="comment" id="comment" ng-model="comment" placeholder="Comment" />
+        </div>
+        <div class="col-xs-4">
+            <input type="button" ng-click="submitIt()" value="Rate" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
